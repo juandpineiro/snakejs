@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="overlay">
+        Your Final Score: <span id="final_score"></span>
+        <br>
+        <a onclick="window.location.reload()" href="#">Click to Play Again</a>
+      </div><!-- overlay -->
+
+      <canvas id="canvas" width="600" height="450">
+        <p>Sorry, your browser is too ancient so you can't play this game.</p>
+      </canvas>
+
+      <div id="stats">
+        <div id="score"></div>
+        <div id="high_score"></div>
+        <button onclick="resetScore()" id="reset_score">Reset High Score</button>
+      </div><!-- stats -->
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="script.js">
+
+    </script>
+  </body>
+</html>
