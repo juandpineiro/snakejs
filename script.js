@@ -11,7 +11,7 @@ $(document).ready(function() {
   var score;
   var snakeColor = '#00ff00';
   var foodColor = '#ff0000';
-  var speed = 130;
+  var speed = 150;
 
   // Snake array
   var snakeArray;
@@ -86,7 +86,7 @@ $(document).ready(function() {
         y: ny
       }
       score++;
-
+      speed -= 5;
       create_food();
     } else {
       var tail = snakeArray.pop();
